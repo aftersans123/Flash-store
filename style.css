@@ -1,0 +1,93 @@
+/* Stile semplice da principiante */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* Contenitore per affiancare i 5 prodotti */
+.store-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Riquadro singolo prodotto */
+.product-box {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border: 3px solid black;
+    width: 220px;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* Tutte le immagini hanno esattamente la stessa altezza e larghezza */
+img, .product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.product-box h2 {
+    font-size: 18px;
+    color: black;
+    margin: 8px 0;
+}
+
+.buy-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Pulsante di test con Scout */
+.test-btn {
+    background-color: red;
+    color: yellow;
+    padding: 15px 25px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px auto;
+    cursor: pointer;
+    display: block;
+}
+
+/* Contatore nascosto all'inizio */
+.display-counter {
+    display: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contenitore video a schermo intero per il jumpscare */
+#jumpscare-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 9999;
+}
+
+#jumpscare-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
